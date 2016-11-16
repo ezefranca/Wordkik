@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D62EAE752E3837A93E2D2C7 /* Pods_WordKikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */; };
+		8B3CF4FF1DDBE99300110373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */; };
+		8B3CF5011DDBE99300110373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5001DDBE99300110373 /* ViewController.swift */; };
+		8B3CF5041DDBE99300110373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5021DDBE99300110373 /* Main.storyboard */; };
+		8B3CF5061DDBE99300110373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5051DDBE99300110373 /* Assets.xcassets */; };
+		8B3CF5091DDBE99300110373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5071DDBE99300110373 /* LaunchScreen.storyboard */; };
+		8B3CF5141DDBE99300110373 /* WordKikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5131DDBE99300110373 /* WordKikTests.swift */; };
+		8B3CF51F1DDBE99300110373 /* WordKikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF51E1DDBE99300110373 /* WordKikUITests.swift */; };
+		A4F98790EC2429A17E55C5D5 /* Pods_WordKikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730FC2FA7BC6BDBD0AE1D8D /* Pods_WordKikTests.framework */; };
+		F12652DDD3F533078134CD84 /* Pods_WordKik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15229E7FD5765442631B6590 /* Pods_WordKik.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B3CF5101DDBE99300110373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3CF4F31DDBE99300110373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3CF4FA1DDBE99300110373;
+			remoteInfo = WordKik;
+		};
+		8B3CF51B1DDBE99300110373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3CF4F31DDBE99300110373 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3CF4FA1DDBE99300110373;
+			remoteInfo = WordKik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15229E7FD5765442631B6590 /* Pods_WordKik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordKik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A0CE72965429E701C28268 /* Pods-WordKik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKik/Pods-WordKik.debug.xcconfig"; sourceTree = "<group>"; };
+		2730FC2FA7BC6BDBD0AE1D8D /* Pods_WordKikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordKikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44941C387B0E443F8D05E461 /* Pods-WordKikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51C242E150235834B2B608B9 /* Pods-WordKikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8413E46ACD579128AAB4E0E7 /* Pods-WordKik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKik.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKik/Pods-WordKik.release.xcconfig"; sourceTree = "<group>"; };
+		8B3CF4FB1DDBE99300110373 /* WordKik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordKik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B3CF5001DDBE99300110373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B3CF5031DDBE99300110373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B3CF5051DDBE99300110373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3CF5081DDBE99300110373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B3CF50A1DDBE99300110373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3CF50F1DDBE99300110373 /* WordKikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordKikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3CF5131DDBE99300110373 /* WordKikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordKikTests.swift; sourceTree = "<group>"; };
+		8B3CF5151DDBE99300110373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3CF51A1DDBE99300110373 /* WordKikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordKikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3CF51E1DDBE99300110373 /* WordKikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordKikUITests.swift; sourceTree = "<group>"; };
+		8B3CF5201DDBE99300110373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD26571705AFC5E7FD1914B /* Pods-WordKikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD49A393118334F69B19469 /* Pods-WordKikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordKikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B3CF4F81DDBE99300110373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12652DDD3F533078134CD84 /* Pods_WordKik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF50C1DDBE99300110373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F98790EC2429A17E55C5D5 /* Pods_WordKikTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF5171DDBE99300110373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D62EAE752E3837A93E2D2C7 /* Pods_WordKikUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CCAD5EAE580F91F0956544B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18A0CE72965429E701C28268 /* Pods-WordKik.debug.xcconfig */,
+				8413E46ACD579128AAB4E0E7 /* Pods-WordKik.release.xcconfig */,
+				ACD26571705AFC5E7FD1914B /* Pods-WordKikTests.debug.xcconfig */,
+				EAD49A393118334F69B19469 /* Pods-WordKikTests.release.xcconfig */,
+				51C242E150235834B2B608B9 /* Pods-WordKikUITests.debug.xcconfig */,
+				44941C387B0E443F8D05E461 /* Pods-WordKikUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B3CF4F21DDBE99300110373 = {
+			isa = PBXGroup;
+			children = (
+				8B3CF4FD1DDBE99300110373 /* WordKik */,
+				8B3CF5121DDBE99300110373 /* WordKikTests */,
+				8B3CF51D1DDBE99300110373 /* WordKikUITests */,
+				8B3CF4FC1DDBE99300110373 /* Products */,
+				4CCAD5EAE580F91F0956544B /* Pods */,
+				F8E55ABE90A92EB1DCCBB923 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B3CF4FC1DDBE99300110373 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF4FB1DDBE99300110373 /* WordKik.app */,
+				8B3CF50F1DDBE99300110373 /* WordKikTests.xctest */,
+				8B3CF51A1DDBE99300110373 /* WordKikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B3CF4FD1DDBE99300110373 /* WordKik */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */,
+				8B3CF5001DDBE99300110373 /* ViewController.swift */,
+				8B3CF5021DDBE99300110373 /* Main.storyboard */,
+				8B3CF5051DDBE99300110373 /* Assets.xcassets */,
+				8B3CF5071DDBE99300110373 /* LaunchScreen.storyboard */,
+				8B3CF50A1DDBE99300110373 /* Info.plist */,
+			);
+			path = WordKik;
+			sourceTree = "<group>";
+		};
+		8B3CF5121DDBE99300110373 /* WordKikTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF5131DDBE99300110373 /* WordKikTests.swift */,
+				8B3CF5151DDBE99300110373 /* Info.plist */,
+			);
+			path = WordKikTests;
+			sourceTree = "<group>";
+		};
+		8B3CF51D1DDBE99300110373 /* WordKikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF51E1DDBE99300110373 /* WordKikUITests.swift */,
+				8B3CF5201DDBE99300110373 /* Info.plist */,
+			);
+			path = WordKikUITests;
+			sourceTree = "<group>";
+		};
+		F8E55ABE90A92EB1DCCBB923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15229E7FD5765442631B6590 /* Pods_WordKik.framework */,
+				2730FC2FA7BC6BDBD0AE1D8D /* Pods_WordKikTests.framework */,
+				EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B3CF4FA1DDBE99300110373 /* WordKik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3CF5231DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKik" */;
+			buildPhases = (
+				4DDDE6358FA6A136FFD6DF6B /* [CP] Check Pods Manifest.lock */,
+				8B3CF4F71DDBE99300110373 /* Sources */,
+				8B3CF4F81DDBE99300110373 /* Frameworks */,
+				8B3CF4F91DDBE99300110373 /* Resources */,
+				F86C3FE1EDEED6A7CC6CB565 /* [CP] Embed Pods Frameworks */,
+				51D87358FB69DF660540DC45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordKik;
+			productName = WordKik;
+			productReference = 8B3CF4FB1DDBE99300110373 /* WordKik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B3CF50E1DDBE99300110373 /* WordKikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3CF5261DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKikTests" */;
+			buildPhases = (
+				DE8BADC894D1CC19704933B9 /* [CP] Check Pods Manifest.lock */,
+				8B3CF50B1DDBE99300110373 /* Sources */,
+				8B3CF50C1DDBE99300110373 /* Frameworks */,
+				8B3CF50D1DDBE99300110373 /* Resources */,
+				279B9E22BEEC4C09C2BDAD3C /* [CP] Embed Pods Frameworks */,
+				90EBA081F4AE425D72B934B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3CF5111DDBE99300110373 /* PBXTargetDependency */,
+			);
+			name = WordKikTests;
+			productName = WordKikTests;
+			productReference = 8B3CF50F1DDBE99300110373 /* WordKikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B3CF5191DDBE99300110373 /* WordKikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3CF5291DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKikUITests" */;
+			buildPhases = (
+				F1D8BAEB5A0D15A5A77B7827 /* [CP] Check Pods Manifest.lock */,
+				8B3CF5161DDBE99300110373 /* Sources */,
+				8B3CF5171DDBE99300110373 /* Frameworks */,
+				8B3CF5181DDBE99300110373 /* Resources */,
+				043045BC9C32479E597DA8FA /* [CP] Embed Pods Frameworks */,
+				D20734CB0C758817AF68381C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3CF51C1DDBE99300110373 /* PBXTargetDependency */,
+			);
+			name = WordKikUITests;
+			productName = WordKikUITests;
+			productReference = 8B3CF51A1DDBE99300110373 /* WordKikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B3CF4F31DDBE99300110373 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ezequiel França @ezefranca";
+				TargetAttributes = {
+					8B3CF4FA1DDBE99300110373 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+					};
+					8B3CF50E1DDBE99300110373 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B3CF4FA1DDBE99300110373;
+					};
+					8B3CF5191DDBE99300110373 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B3CF4FA1DDBE99300110373;
+					};
+				};
+			};
+			buildConfigurationList = 8B3CF4F61DDBE99300110373 /* Build configuration list for PBXProject "WordKik" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B3CF4F21DDBE99300110373;
+			productRefGroup = 8B3CF4FC1DDBE99300110373 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B3CF4FA1DDBE99300110373 /* WordKik */,
+				8B3CF50E1DDBE99300110373 /* WordKikTests */,
+				8B3CF5191DDBE99300110373 /* WordKikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B3CF4F91DDBE99300110373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CF5091DDBE99300110373 /* LaunchScreen.storyboard in Resources */,
+				8B3CF5061DDBE99300110373 /* Assets.xcassets in Resources */,
+				8B3CF5041DDBE99300110373 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF50D1DDBE99300110373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF5181DDBE99300110373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		043045BC9C32479E597DA8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		279B9E22BEEC4C09C2BDAD3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DDDE6358FA6A136FFD6DF6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51D87358FB69DF660540DC45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKik/Pods-WordKik-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90EBA081F4AE425D72B934B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20734CB0C758817AF68381C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8BADC894D1CC19704933B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D8BAEB5A0D15A5A77B7827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F86C3FE1EDEED6A7CC6CB565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordKik/Pods-WordKik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B3CF4F71DDBE99300110373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CF5011DDBE99300110373 /* ViewController.swift in Sources */,
+				8B3CF4FF1DDBE99300110373 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF50B1DDBE99300110373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CF5141DDBE99300110373 /* WordKikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3CF5161DDBE99300110373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CF51F1DDBE99300110373 /* WordKikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B3CF5111DDBE99300110373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3CF4FA1DDBE99300110373 /* WordKik */;
+			targetProxy = 8B3CF5101DDBE99300110373 /* PBXContainerItemProxy */;
+		};
+		8B3CF51C1DDBE99300110373 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3CF4FA1DDBE99300110373 /* WordKik */;
+			targetProxy = 8B3CF51B1DDBE99300110373 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B3CF5021DDBE99300110373 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3CF5031DDBE99300110373 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B3CF5071DDBE99300110373 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3CF5081DDBE99300110373 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B3CF5211DDBE99300110373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B3CF5221DDBE99300110373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B3CF5241DDBE99300110373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A0CE72965429E701C28268 /* Pods-WordKik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8B3CF5251DDBE99300110373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8413E46ACD579128AAB4E0E7 /* Pods-WordKik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8B3CF5271DDBE99300110373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD26571705AFC5E7FD1914B /* Pods-WordKikTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordKik.app/WordKik";
+			};
+			name = Debug;
+		};
+		8B3CF5281DDBE99300110373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD49A393118334F69B19469 /* Pods-WordKikTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordKik.app/WordKik";
+			};
+			name = Release;
+		};
+		8B3CF52A1DDBE99300110373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C242E150235834B2B608B9 /* Pods-WordKikUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WordKik;
+			};
+			name = Debug;
+		};
+		8B3CF52B1DDBE99300110373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44941C387B0E443F8D05E461 /* Pods-WordKikUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = WordKikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WordKik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B3CF4F61DDBE99300110373 /* Build configuration list for PBXProject "WordKik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3CF5211DDBE99300110373 /* Debug */,
+				8B3CF5221DDBE99300110373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3CF5231DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3CF5241DDBE99300110373 /* Debug */,
+				8B3CF5251DDBE99300110373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3CF5261DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3CF5271DDBE99300110373 /* Debug */,
+				8B3CF5281DDBE99300110373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3CF5291DDBE99300110373 /* Build configuration list for PBXNativeTarget "WordKikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3CF52A1DDBE99300110373 /* Debug */,
+				8B3CF52B1DDBE99300110373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B3CF4F31DDBE99300110373 /* Project object */;
+}
