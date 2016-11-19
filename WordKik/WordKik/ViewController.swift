@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadJson()
+        self.tableview.rowHeight = 30
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -74,6 +75,8 @@ extension ViewController : UITableViewDataSource{
         cell.setup(viewModel: (datasource[indexPath.row]))
         
     }
+    
+
 }
 
 

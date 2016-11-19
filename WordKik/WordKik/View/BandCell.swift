@@ -16,16 +16,20 @@ class BandCell: UITableViewCell {
         didSet{
                 if let vm = viewModel {
                     self.name.text = vm.name
-                    self.id.text = vm.id
                 }
             }
         }
     
     
     @IBOutlet private var name: UILabel!
-    @IBOutlet private var id: UILabel!
     
     func setup(viewModel: BandViewModel){
         self.viewModel = viewModel
+        self.setupView()
+    }
+    
+    func setupView() {
+        self.contentView.superview?.backgroundColor = UIColor.black
+        //self.accessoryView?.backgroundColor = UIColor.black
     }
 }
