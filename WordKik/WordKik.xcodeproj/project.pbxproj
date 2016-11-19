@@ -16,6 +16,11 @@
 		8B3CF5141DDBE99300110373 /* WordKikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5131DDBE99300110373 /* WordKikTests.swift */; };
 		8B3CF51F1DDBE99300110373 /* WordKikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF51E1DDBE99300110373 /* WordKikUITests.swift */; };
 		8B3CF52E1DDBEA1300110373 /* bands.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF52D1DDBEA1300110373 /* bands.json */; };
+		8B3CF5331DDF645B00110373 /* Bands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5321DDF645B00110373 /* Bands.swift */; };
+		8B3CF5351DDF65A500110373 /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5341DDF65A500110373 /* Band.swift */; };
+		8B3CF5381DDF70E600110373 /* BandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5371DDF70E600110373 /* BandCell.swift */; };
+		8B3CF53A1DDF71D500110373 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5391DDF71D500110373 /* BandViewModel.swift */; };
+		8B3CF53C1DE1005E00110373 /* BandDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF53B1DE1005E00110373 /* BandDetails.swift */; };
 		A4F98790EC2429A17E55C5D5 /* Pods_WordKikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730FC2FA7BC6BDBD0AE1D8D /* Pods_WordKikTests.framework */; };
 		F12652DDD3F533078134CD84 /* Pods_WordKik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15229E7FD5765442631B6590 /* Pods_WordKik.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +63,11 @@
 		8B3CF51E1DDBE99300110373 /* WordKikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordKikUITests.swift; sourceTree = "<group>"; };
 		8B3CF5201DDBE99300110373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3CF52D1DDBEA1300110373 /* bands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bands.json; sourceTree = "<group>"; };
+		8B3CF5321DDF645B00110373 /* Bands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bands.swift; path = Models/Bands.swift; sourceTree = "<group>"; };
+		8B3CF5341DDF65A500110373 /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Band.swift; path = Models/Band.swift; sourceTree = "<group>"; };
+		8B3CF5371DDF70E600110373 /* BandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandCell.swift; path = View/BandCell.swift; sourceTree = "<group>"; };
+		8B3CF5391DDF71D500110373 /* BandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandViewModel.swift; path = Models/BandViewModel.swift; sourceTree = "<group>"; };
+		8B3CF53B1DE1005E00110373 /* BandDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandDetails.swift; path = Models/BandDetails.swift; sourceTree = "<group>"; };
 		ACD26571705AFC5E7FD1914B /* Pods-WordKikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD49A393118334F69B19469 /* Pods-WordKikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordKikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +140,8 @@
 		8B3CF4FD1DDBE99300110373 /* WordKik */ = {
 			isa = PBXGroup;
 			children = (
+				8B3CF5361DDF70D000110373 /* View */,
+				8B3CF52F1DDBFE2400110373 /* Models */,
 				8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */,
 				8B3CF5001DDBE99300110373 /* ViewController.swift */,
 				8B3CF5021DDBE99300110373 /* Main.storyboard */,
@@ -164,6 +176,25 @@
 				8B3CF52D1DDBEA1300110373 /* bands.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B3CF52F1DDBFE2400110373 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF5321DDF645B00110373 /* Bands.swift */,
+				8B3CF5341DDF65A500110373 /* Band.swift */,
+				8B3CF5391DDF71D500110373 /* BandViewModel.swift */,
+				8B3CF53B1DE1005E00110373 /* BandDetails.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8B3CF5361DDF70D000110373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CF5371DDF70E600110373 /* BandCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		F8E55ABE90A92EB1DCCBB923 /* Frameworks */ = {
@@ -462,6 +493,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3CF5011DDBE99300110373 /* ViewController.swift in Sources */,
+				8B3CF5381DDF70E600110373 /* BandCell.swift in Sources */,
+				8B3CF5331DDF645B00110373 /* Bands.swift in Sources */,
+				8B3CF53A1DDF71D500110373 /* BandViewModel.swift in Sources */,
+				8B3CF53C1DE1005E00110373 /* BandDetails.swift in Sources */,
+				8B3CF5351DDF65A500110373 /* Band.swift in Sources */,
 				8B3CF4FF1DDBE99300110373 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
