@@ -85,6 +85,14 @@ extension ViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    private func presentDetails(index:NSIndexPath) {
+        let sb = UIStoryboard(name: self.storyboardName(), bundle: Bundle(identifier: DetailViewController.identifier))
+        let vc = sb.instantiateViewControllerWithIdentifier(DetailViewController.identifier) as! DetailViewController
+        //vc.model = photoViewModels[index.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 
