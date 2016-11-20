@@ -8,6 +8,7 @@
 
 import UIKit
 import ObjectMapper
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loadJson()
         self.tableview.rowHeight = 30
+        
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -86,13 +90,23 @@ extension ViewController : UITableViewDelegate{
         return 100
     }
     
-    private func presentDetails(index:NSIndexPath) {
-        let sb = UIStoryboard(name: self.storyboardName(), bundle: Bundle(identifier: DetailViewController.identifier))
-        let vc = sb.instantiateViewControllerWithIdentifier(DetailViewController.identifier) as! DetailViewController
-        //vc.model = photoViewModels[index.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let c:BandAPI = BandAPI()
+        c.downloadDetails(id: indexPath.row + 1, completion: { (result) in
+            print(result)
+            let details = Mapper<BandDetails>().map(JSON: result as! [String : Any])
+            print(details?.name)
+        })
     }
     
 }
+    
+//    private func presentDetails(index:NSIndexPath) {
+//        let sb = UIStoryboard(name: self.storyboardName(), bundle: Bundle(identifier: DetailViewController.identifier))
+//        let vc = sb.instantiateViewControllerWithIdentifier(DetailViewController.identifier) as! DetailViewController
+//        //vc.model = photoViewModels[index.row]
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 
 
