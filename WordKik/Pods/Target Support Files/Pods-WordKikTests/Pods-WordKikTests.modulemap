@@ -1,0 +1,6 @@
+framework module Pods_WordKikTests {
+  umbrella header "Pods-WordKikTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_WordKik {
+  umbrella header "Pods-WordKik-umbrella.h"
+
+  export *
+  module * { export * }
+}

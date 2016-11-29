@@ -10,13 +10,19 @@ import UIKit
 import ObjectMapper
 import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SegueHandler {
 
     
     var datasource:[BandViewModel] = []
+    var bandDetail:BandDetails?
     
     @IBOutlet var tableview: UITableView!
     var cell:BandCell? = nil
+    
+    enum SegueIdentifier: String {
+        case DetailViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadJson()
@@ -32,24 +38,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func loadJson() {
-        if let path = Bundle.main.path(forResource: "bands", ofType: "json") {
-            do {
-                let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
-                do {
-                    let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-                    
-                    
-                     let bands = Mapper<Bands>().map(JSON: jsonResult as! [String : Any])
-                    
-                    for band in (bands?.bands)! {
-                        let b = BandViewModel(band: band)
-                        datasource.append(b)
-                    }
-                    
-                    tableview.reloadData()
-                } catch {}
-            } catch {}
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        switch segueIdentifierForSegue(segue) {
+            
+        case .DetailViewController:
+            let detail = segue.destination as? DetailViewController
+            detail?.inject(self.bandDetail!)
         }
     }
 
@@ -96,12 +93,38 @@ extension ViewController : UITableViewDelegate{
         c.downloadDetails(id: indexPath.row + 1, completion: { (result) in
             print(result)
             let details = Mapper<BandDetails>().map(JSON: result as! [String : Any])
-            print(details?.name)
+            self.bandDetail = details
+            self.performSegueWithIdentifier(.DetailViewController, sender: self)
         })
     }
     
 }
+
+extension ViewController {
     
+    func loadJson() {
+        if let path = Bundle.main.path(forResource: "bands", ofType: "json") {
+            do {
+                let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
+                do {
+                    let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                    
+                    
+                    let bands = Mapper<Bands>().map(JSON: jsonResult as! [String : Any])
+                    
+                    for band in (bands?.bands)! {
+                        let b = BandViewModel(band: band)
+                        datasource.append(b)
+                    }
+                    
+                    tableview.reloadData()
+                } catch {}
+            } catch {}
+        }
+    }
+
+}
+
 //    private func presentDetails(index:NSIndexPath) {
 //        let sb = UIStoryboard(name: self.storyboardName(), bundle: Bundle(identifier: DetailViewController.identifier))
 //        let vc = sb.instantiateViewControllerWithIdentifier(DetailViewController.identifier) as! DetailViewController
