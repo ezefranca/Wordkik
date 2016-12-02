@@ -11,13 +11,11 @@ import Alamofire
 
 struct BandAPI {
     
+    let detailsUrl = "https://powerful-oasis-33182.herokuapp.com/bands/"
+    
     func downloadDetails(id:Int, completion: @escaping (Any) -> Void) {
-        
-        Alamofire.request("https://powerful-oasis-33182.herokuapp.com/bands/\(id)").responseJSON { response in
-            print(response.result)   // result of response serialization
-            
+        Alamofire.request(detailsUrl+"\(id)").responseJSON { response in
             if let JSON = response.result.value {
-                print("JSON: \(JSON)")
                 completion(JSON)
             }
         }

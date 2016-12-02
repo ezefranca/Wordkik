@@ -17,10 +17,13 @@ protocol Injectable {
 
 class DetailViewController: UIViewController, Injectable {
     
-    static let identifier = "DetailViewController"
-    typealias T = BandDetails
+     //MARK: - Instance Variables
     
-    var bandDetails:BandDetails?
+    static let identifier = "DetailViewController"
+    typealias T = BandDetailsViewModel
+    var bandDetails:BandDetailsViewModel?
+    
+     //MARK: - IBOutlets
     
     @IBOutlet private var bandImage: UIImageView!
     @IBOutlet private var bandName: UILabel!
@@ -28,26 +31,37 @@ class DetailViewController: UIViewController, Injectable {
     @IBOutlet private var bandGenre: UILabel!
     @IBOutlet var flagImageView: UIImageView!
     
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.bandName.text = bandDetails?.name
-        bandImage.pin_updateWithProgress = true
-        flagImageView.pin_updateWithProgress = true
-        bandImage.pin_setImage(from: URL(string: (bandDetails?.image)!))
-        flagImageView.pin_setImage(from: URL(string: (bandDetails?.country_flag)!))
-        //flagImageView.image = UIImage(named: (Locale.autoupdatingCurrent.localizedString(forIdentifier: "USA") )!)
-        //DetailViewController
-    
-        // Do any additional setup after loading the view.
+        assertDependencies()
+        self.title = bandDetails?.name
+        initialSetup()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: - Setup
+    
+    func initialSetup() {
+        self.bandName.text = bandDetails?.name
+        bandImage.pin_updateWithProgress = true
+        flagImageView.pin_updateWithProgress = true
+        bandImage.pin_setImage(from: URL(string:(bandDetails?.image)!))
+        flagImageView.pin_setImage(from: URL(string: (bandDetails?.country_flag)!))
+    }
+    
+    //MARK: - Actions
+    
     @IBAction func openBandWebsite(_ sender: Any) {
     }
 }
+
+//MARK: - Extensions
 
 extension DetailViewController {
     func inject(_ thing: T) {

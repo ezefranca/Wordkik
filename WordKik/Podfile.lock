@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.0.1)
   - FLAnimatedImage (1.0.12)
+  - MRLCircleChart (0.5.0)
   - ObjectMapper (2.1.0)
   - PINCache (2.3)
   - PINRemoteImage (2.1.4):
@@ -10,22 +11,27 @@ PODS:
   - PINRemoteImage/FLAnimatedImage (2.1.4):
     - FLAnimatedImage (>= 1.0)
     - PINRemoteImage/Core
+  - SVProgressHUD (2.0.3)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire
+  - MRLCircleChart
   - ObjectMapper
   - PINRemoteImage
+  - SVProgressHUD
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  MRLCircleChart: 42411945e5f7d5606a78b6477f3966ea0177129c
   ObjectMapper: e5e0f8aef8590fc2ddcde7f27eddb255863ee6e9
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 14f9eb0eec02b941b8f23dec26acdcbed6cd832a
+PODFILE CHECKSUM: 0163f1edb603274d17fb96bbd2a6fee7de5e3a68
 
 COCOAPODS: 1.2.0.beta.1

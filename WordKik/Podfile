@@ -8,8 +8,9 @@ target 'WordKik' do
    pod 'ObjectMapper'
    pod 'Alamofire'
    pod 'PINRemoteImage'
- 	
-  target 'WordKikTests' do
+   pod 'SVProgressHUD' 	
+   pod "MRLCircleChart"  
+target 'WordKikTests' do
     inherit! :search_paths
 end
 

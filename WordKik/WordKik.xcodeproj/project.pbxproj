@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7D62EAE752E3837A93E2D2C7 /* Pods_WordKikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */; };
+		8B3012951DEE82B200A34C5B /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3012941DEE82B200A34C5B /* CountriesViewController.swift */; };
+		8B3012971DEE83D900A34C5B /* BandDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3012961DEE83D900A34C5B /* BandDetailsViewModel.swift */; };
 		8B3CF4FF1DDBE99300110373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */; };
-		8B3CF5011DDBE99300110373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5001DDBE99300110373 /* ViewController.swift */; };
+		8B3CF5011DDBE99300110373 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CF5001DDBE99300110373 /* ListViewController.swift */; };
 		8B3CF5041DDBE99300110373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5021DDBE99300110373 /* Main.storyboard */; };
 		8B3CF5061DDBE99300110373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5051DDBE99300110373 /* Assets.xcassets */; };
 		8B3CF5091DDBE99300110373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3CF5071DDBE99300110373 /* LaunchScreen.storyboard */; };
@@ -52,9 +54,11 @@
 		44941C387B0E443F8D05E461 /* Pods-WordKikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		51C242E150235834B2B608B9 /* Pods-WordKikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikUITests/Pods-WordKikUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8413E46ACD579128AAB4E0E7 /* Pods-WordKik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKik.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKik/Pods-WordKik.release.xcconfig"; sourceTree = "<group>"; };
+		8B3012941DEE82B200A34C5B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		8B3012961DEE83D900A34C5B /* BandDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandDetailsViewModel.swift; path = Models/BandDetailsViewModel.swift; sourceTree = "<group>"; };
 		8B3CF4FB1DDBE99300110373 /* WordKik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordKik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B3CF5001DDBE99300110373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B3CF5001DDBE99300110373 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8B3CF5031DDBE99300110373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B3CF5051DDBE99300110373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3CF5081DDBE99300110373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		8B3CF53D1DE267C400110373 /* DetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalViewController.swift; sourceTree = "<group>"; };
 		8B3CF5401DE26AF300110373 /* BandAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandAPI.swift; path = Network/BandAPI.swift; sourceTree = "<group>"; };
 		8B3CF5431DEBC73600110373 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandler.swift; path = Helpers/SegueHandler.swift; sourceTree = "<group>"; };
+		8B3CF5451DEE4C5D00110373 /* WordKik-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordKik-Bridging-Header.h"; sourceTree = "<group>"; };
 		ACD26571705AFC5E7FD1914B /* Pods-WordKikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD49A393118334F69B19469 /* Pods-WordKikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordKikTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordKikTests/Pods-WordKikTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAE381F83F8F1D987E2666ED /* Pods_WordKikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordKikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +135,7 @@
 				8B3CF4FC1DDBE99300110373 /* Products */,
 				4CCAD5EAE580F91F0956544B /* Pods */,
 				F8E55ABE90A92EB1DCCBB923 /* Frameworks */,
+				8B3CF5451DEE4C5D00110373 /* WordKik-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,8 +157,9 @@
 				8B3CF5361DDF70D000110373 /* View */,
 				8B3CF52F1DDBFE2400110373 /* Models */,
 				8B3CF4FE1DDBE99300110373 /* AppDelegate.swift */,
-				8B3CF5001DDBE99300110373 /* ViewController.swift */,
+				8B3CF5001DDBE99300110373 /* ListViewController.swift */,
 				8B3CF53D1DE267C400110373 /* DetalViewController.swift */,
+				8B3012941DEE82B200A34C5B /* CountriesViewController.swift */,
 				8B3CF5021DDBE99300110373 /* Main.storyboard */,
 				8B3CF5051DDBE99300110373 /* Assets.xcassets */,
 				8B3CF5071DDBE99300110373 /* LaunchScreen.storyboard */,
@@ -190,10 +197,11 @@
 		8B3CF52F1DDBFE2400110373 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8B3CF5321DDF645B00110373 /* Bands.swift */,
 				8B3CF5341DDF65A500110373 /* Band.swift */,
+				8B3CF5321DDF645B00110373 /* Bands.swift */,
 				8B3CF5391DDF71D500110373 /* BandViewModel.swift */,
 				8B3CF53B1DE1005E00110373 /* BandDetails.swift */,
+				8B3012961DEE83D900A34C5B /* BandDetailsViewModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -310,6 +318,7 @@
 					8B3CF4FA1DDBE99300110373 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 54JDK55DR5;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8B3CF50E1DDBE99300110373 = {
@@ -517,13 +526,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3CF5011DDBE99300110373 /* ViewController.swift in Sources */,
+				8B3CF5011DDBE99300110373 /* ListViewController.swift in Sources */,
 				8B3CF5381DDF70E600110373 /* BandCell.swift in Sources */,
 				8B3CF5331DDF645B00110373 /* Bands.swift in Sources */,
 				8B3CF53A1DDF71D500110373 /* BandViewModel.swift in Sources */,
+				8B3012951DEE82B200A34C5B /* CountriesViewController.swift in Sources */,
 				8B3CF5411DE26AF300110373 /* BandAPI.swift in Sources */,
 				8B3CF53C1DE1005E00110373 /* BandDetails.swift in Sources */,
 				8B3CF5441DEBC73600110373 /* SegueHandler.swift in Sources */,
+				8B3012971DEE83D900A34C5B /* BandDetailsViewModel.swift in Sources */,
 				8B3CF53E1DE267C400110373 /* DetalViewController.swift in Sources */,
 				8B3CF5351DDF65A500110373 /* Band.swift in Sources */,
 				8B3CF4FF1DDBE99300110373 /* AppDelegate.swift in Sources */,
@@ -677,11 +688,14 @@
 			baseConfigurationReference = 18A0CE72965429E701C28268 /* Pods-WordKik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WordKik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WordKik-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -691,11 +705,13 @@
 			baseConfigurationReference = 8413E46ACD579128AAB4E0E7 /* Pods-WordKik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = WordKik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.WordKik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WordKik-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
