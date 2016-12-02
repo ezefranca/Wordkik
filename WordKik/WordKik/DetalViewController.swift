@@ -58,6 +58,9 @@ class DetailViewController: UIViewController, Injectable {
     //MARK: - Actions
     
     @IBAction func openBandWebsite(_ sender: Any) {
+        if let url = URL(string: "http://" + (bandDetails?.website)!) {
+        UIApplication.shared.open(url, options: [:])
+        }
     }
 }
 
